@@ -6,6 +6,7 @@ import { createContext, useState } from "react";
 import Admin from "./Component/Admin/Admin";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 import Login from "./Component/Login/Login";
+import CheckOut from "./Component/CheckOut/CheckOut";
 
 export const UserContex = createContext();
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <PrivateRoute path="/admin">
             <Admin />
+          </PrivateRoute>
+          <PrivateRoute path="/checkOut/:id">
+            <CheckOut />
           </PrivateRoute>
         </Switch>
       </Router>

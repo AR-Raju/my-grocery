@@ -1,11 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBaliWO4YH9qgR2ZFAfXO1zoDrd3qO4EkY",
-  authDomain: "ema-john-raju.firebaseapp.com",
-  projectId: "ema-john-raju",
-  storageBucket: "ema-john-raju.appspot.com",
-  messagingSenderId: "311568050019",
-  appId: "1:311568050019:web:10373f662287c843ca1556",
-  measurementId: "G-SG3KP39RGB",
+  apiKey: "AIzaSyDCB2P8SLb3qQcFtjey57pPG_H64EOuFLg",
+  authDomain: "raju-agro.firebaseapp.com",
+  projectId: "raju-agro",
+  storageBucket: "raju-agro.appspot.com",
+  messagingSenderId: "207248283646",
+  appId: "1:207248283646:web:e9cf21895e5b77503fd2af",
 };
 
 export default firebaseConfig;

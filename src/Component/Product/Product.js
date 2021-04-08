@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 const Product = (props) => {
-  const { name, imageURL, price } = props.products;
+  const { name, imageURL, price, _id } = props.products;
   return (
     <div>
       <Card style={{ width: "18rem" }}>
@@ -12,7 +14,9 @@ const Product = (props) => {
         </Card.Body>
         <Card.Body className="d-flex justify-content-between">
           <Card.Title className="text-success">${price}</Card.Title>
-          <Button variant="success">Buy Now</Button>
+          <Link to={`/checkOut/${_id}`}>
+            <Button variant="success">Buy Now</Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>

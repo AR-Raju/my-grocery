@@ -17,11 +17,13 @@ const Home = () => {
   };
   const [products, setProducts] = useState([]);
 
+  // toggleSpinner(true);
   useEffect(() => {
     fetch("https://hidden-castle-03330.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  // toggleSpinner(false);
 
   return (
     <div>

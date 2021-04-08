@@ -15,7 +15,7 @@ const AddProducts = () => {
       price: data.price,
       imageURL: imageURL,
     };
-    const url = `http://localhost:5055/addProducts`;
+    const url = `https://hidden-castle-03330.herokuapp.com/addProducts`;
     console.log(eventData);
     fetch(url, {
       method: "POST",
