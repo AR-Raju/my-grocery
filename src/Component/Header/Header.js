@@ -11,7 +11,7 @@ const Header = () => {
           href="/home"
           className="text-white font-weight-bold bg-warning px-3"
         >
-          Raju Agro
+          My Grocery
         </Navbar.Brand>
         <Nav className="ml-auto">
           <Link className="mr-2" to="/home">
